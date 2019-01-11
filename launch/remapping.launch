@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- launch the remapping node -->
+  <node name="remapping_node" pkg="remapping" type="remapping_node" >
+  </node>
+
+</launch>
