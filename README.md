@@ -1,3 +1,6 @@
 # remapping
 
-This package is a wrapper between the driver's messages of [Ellipse] (http://wiki.ros.org/sbg_driver) IMU and standard msgs in ROS. 
+The aim of this package is to standardize the messages of Ellipse IMU from SBG Systems.
+The driver for this unit is fully available at 
+
+[MIT](https://choosealicense.com/licenses/mit/)
