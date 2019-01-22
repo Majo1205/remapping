@@ -54,11 +54,6 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
  add_message_files(
    FILES
-   custom_msg.msg
-   SbgEkfNav.msg
-   SbgGpsPos.msg
-   SbgEkfQuat.msg
-   SbgImuData.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -146,10 +141,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/my_wrapper_node.cpp)
 
-add_executable(my_wrapper src/my_wrapper.cpp)
-add_executable(my_wrapper2 src/my_wrapper2.cpp)
 add_executable(remapping_node src/remapping_node.cpp)
-add_executable(trials src/trials.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -166,10 +158,8 @@ add_executable(trials src/trials.cpp)
 #   ${catkin_LIBRARIES}
 # )
 
-target_link_libraries(my_wrapper ${catkin_LIBRARIES})
-target_link_libraries(my_wrapper2 ${catkin_LIBRARIES})
 target_link_libraries(remapping_node ${catkin_LIBRARIES})
-target_link_libraries(trials ${catkin_LIBRARIES})
+
 #############
 ## Install ##
 #############
